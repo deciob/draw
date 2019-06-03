@@ -10,7 +10,13 @@
 
   <body>
     <div class="app">
-      <div class="controls-area"></div>
+      <div class="controls-area">
+        <div>
+          <!-- see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color -->
+          <input type="color" id="color-picker" name="picker" value="#000">
+          <label for="head">Brush Colour</label>
+        </div>
+      </div>
       <canvas id="draw-area" class="draw-area"></canvas>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.js"></script>
